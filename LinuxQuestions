@@ -1,1 +1,28 @@
-hi
+1.     How can you list all running processes on a Linux system?
+      Use ps -aux for static, detailed process listings.
+      Use htop for interactive, real-time process monitoring.
+2.     What is the difference between grep and awk?
+      Choose grep for fast, straightforward text searches.
+      Choose awk for complex text processing and manipulation.
+3.     How to change permissions of a file to 755 in Linux?
+      Command Syntax:chmod 755 filename
+      
+4.     You need to find all files larger than 500MB under the /var/log directory. What command will you use?
+       A)find /var/log -type f -size +500M
+       Display Human-Readable Sizes:find /var/log -type f -size +500M -exec ls -lh {} +
+5.     A specific service has stopped responding. How will you find its process ID and kill it safely without affecting other processes?
+       Step1:
+        Find processes related to the service by its name:ps aux | grep servicename
+       Replace servicename with the name of the service or binary (e.g., nginx, apache2).
+      Step2:
+      Once you have the PID, use the kill command:kill PID
+
+6.     How to identify the processes consuming the most CPU or memory?
+      A)Real-time Monitoring: Use top or htop.
+7.     How to check the free disk space on a Linux machine? If a particular partition (e.g., /var) is 95% full, what steps will you take to resolve it?
+8.     You suspect a service failure occurred last night. How to search for all error messages in the logs from yesterday using a single command?
+9.     A user reports they cannot execute a script named deploy.sh. What steps will you take to fix permissions so only the user and the group can execute it?
+10.  Explain the output of ls -l and how file permission bits work.
+11.  You are asked to schedule a script to run every day at 3:00 AM. How to set up a cron job for this task?
+12.  You need to find all .log files modified in the last 7 days and archive them into a single .tar.gz file. What commands would you use?
+13.  A developer accidentally deleted an important file. You don’t have a backup, but you suspect it is still open in a running process. How to recover the file?
