@@ -1,0 +1,5 @@
+git --version
+mvn --version
+tree --version
+httpd -v
+docker version
