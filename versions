@@ -6,3 +6,4 @@ docker version
 java -version
 kubectl version
 kops version
+terraform -v
