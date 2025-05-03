@@ -1,4 +1,4 @@
-git --version
+git --version, git -v
 mvn --version
 tree --version
 httpd -v
